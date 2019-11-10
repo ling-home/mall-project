@@ -37,6 +37,7 @@ public class GoodsContoller extends BaseController {
      */
     @GetMapping("/detail/{goodsId}")
     public HttpResponseBody detail(@PathVariable("goodsId") Integer goodsId){
+        logger.debug("wdh master");
         return HttpResponseBody.successResponse("ok",  goodsService.findOneById(goodsId));
     }
 
