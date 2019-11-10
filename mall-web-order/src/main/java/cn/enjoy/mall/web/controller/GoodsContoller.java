@@ -19,7 +19,7 @@ public class GoodsContoller extends BaseController {
     private IGoodsService goodsService;
 
 
-    
+
     /**
      * 根据关键字搜索商品
      * @param param
