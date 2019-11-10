@@ -19,7 +19,7 @@ public class GoodsContoller extends BaseController {
     private IGoodsService goodsService;
 
 
-    
+
     /**
      * 根据关键字搜索商品
      * @param param
@@ -37,6 +37,7 @@ public class GoodsContoller extends BaseController {
      */
     @GetMapping("/detail/{goodsId}")
     public HttpResponseBody detail(@PathVariable("goodsId") Integer goodsId){
+        logger.debug("wdh");
         return HttpResponseBody.successResponse("ok",  goodsService.findOneById(goodsId));
     }
 
