@@ -18,6 +18,8 @@ public class GoodsContoller extends BaseController {
     @Reference
     private IGoodsService goodsService;
 
+
+    
     /**
      * 根据关键字搜索商品
      * @param param
